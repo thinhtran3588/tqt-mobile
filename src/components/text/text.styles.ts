@@ -7,30 +7,29 @@ export const styles = StyleSheet.create({
   },
   h2: {
     fontSize: 22,
-    fontWeight: '900',
+    fontWeight: 'bold',
   },
   h3: {
     fontSize: 20,
-    fontWeight: '800',
+    fontWeight: 'bold',
   },
   h4: {
     fontSize: 18,
-    fontWeight: '700',
+    fontWeight: 'bold',
   },
   h5: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: 'bold',
   },
   h6: {
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: 'bold',
   },
   label: {
     fontSize: 13,
-    fontWeight: '400',
+    fontWeight: 'bold',
   },
   p: {
     fontSize: 12,
-    fontWeight: '300',
   },
 });

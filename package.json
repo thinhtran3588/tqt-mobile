@@ -41,7 +41,7 @@
     ],
     "preset": "react-native"
   },
-  "main": "libs/index.js",
+  "main": "lib/index.js",
   "name": "@tqt/mobile",
   "scripts": {
     "lint": "prettier --check . && eslint . --ext .js,.jsx,.ts,.tsx && tsc",
@@ -51,6 +51,6 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
   },
-  "types": "libs/index.d.ts",
+  "types": "lib/index.d.ts",
   "version": "0.1.0"
 }

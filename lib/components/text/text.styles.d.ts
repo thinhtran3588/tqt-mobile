@@ -5,30 +5,29 @@ export declare const styles: {
     };
     h2: {
         fontSize: number;
-        fontWeight: "900";
+        fontWeight: "bold";
     };
     h3: {
         fontSize: number;
-        fontWeight: "800";
+        fontWeight: "bold";
     };
     h4: {
         fontSize: number;
-        fontWeight: "700";
+        fontWeight: "bold";
     };
     h5: {
         fontSize: number;
-        fontWeight: "600";
+        fontWeight: "bold";
     };
     h6: {
         fontSize: number;
-        fontWeight: "500";
+        fontWeight: "bold";
     };
     label: {
         fontSize: number;
-        fontWeight: "400";
+        fontWeight: "bold";
     };
     p: {
         fontSize: number;
-        fontWeight: "300";
     };
 };
