@@ -2,11 +2,11 @@ import React from 'react';
 import {SafeAreaView, View} from 'react-native';
 import {styles} from './root-layout.styles';
 
-type Props = {
+export type RootLayoutProps = {
   children?: React.ReactNode;
 };
 
-export const RootLayout = (props: Props): JSX.Element => {
+export const RootLayout = (props: RootLayoutProps): JSX.Element => {
   const {children} = props;
   return (
     <View style={styles.container}>

@@ -1,6 +1,5 @@
 import React from 'react';
-declare type Props = {
+export declare type RootLayoutProps = {
     children?: React.ReactNode;
 };
-export declare const RootLayout: (props: Props) => JSX.Element;
-export {};
+export declare const RootLayout: (props: RootLayoutProps) => JSX.Element;
