@@ -9,6 +9,7 @@
   },
   "description": "A component React Native library",
   "devDependencies": {
+    "@babel/cli": "^7.10.3",
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^1.0.0",
