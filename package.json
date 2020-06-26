@@ -1,35 +1,41 @@
 {
+  "author": "Thinh Tran",
+  "bugs": {
+    "url": "https://github.com/thinhtran3588/tqt-mobile/issues"
+  },
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2"
   },
+  "description": "A component React Native library",
   "devDependencies": {
-    "@babel/cli": "^7.10.3",
-    "@babel/core": "^7.10.3",
-    "@babel/runtime": "^7.10.3",
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^1.0.0",
     "@types/jest": "^24.0.24",
     "@types/react-native": "^0.62.0",
     "@types/react-test-renderer": "16.9.2",
-    "@typescript-eslint/eslint-plugin": "^2.25.0",
-    "@typescript-eslint/parser": "^2.25.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
     "babel-jest": "^24.9.0",
     "babel-plugin-module-resolver": "^4.0.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-no-null": "^1.0.2",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "4.0.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.58.0",
     "prettier": "^2.0.4",
     "react-test-renderer": "16.11.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.8.3"
   },
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/thinhtran3588/tqt-mobile#readme",
   "jest": {
     "moduleFileExtensions": [
       "ts",
@@ -41,16 +47,24 @@
     ],
     "preset": "react-native"
   },
+  "keywords": [
+    "react-native"
+  ],
+  "license": "MIT",
   "main": "lib/index.js",
   "name": "@tqt/mobile",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinhtran3588/tqt-mobile.git"
+  },
   "scripts": {
+    "build": "rm -r -f lib && yarn run build:types && yarn run build:js",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build:types": "tsc --emitDeclarationOnly",
     "lint": "prettier --check . && eslint . --ext .js,.jsx,.ts,.tsx && tsc",
     "lint_fix": "prettier --write . --ext .js,.jsx,.ts,.tsx && eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "test": "jest",
-    "build": "rm -r -f lib && yarn run build:types && yarn run build:js",
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
+    "test": "jest"
   },
   "types": "lib/index.d.ts",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
