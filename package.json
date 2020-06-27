@@ -4,6 +4,8 @@
     "url": "https://github.com/thinhtran3588/tqt-mobile/issues"
   },
   "dependencies": {
+    "lottie-ios": "3.1.3",
+    "lottie-react-native": "^3.4.0",
     "react": "16.11.0",
     "react-native": "0.62.2"
   },
@@ -59,12 +61,14 @@
     "url": "git+https://github.com/thinhtran3588/tqt-mobile.git"
   },
   "scripts": {
-    "build": "rm -r -f lib && yarn run build:types && yarn run build:js",
+    "copy-resources": "cp src/components/loading/loading.json lib/components/loading/loading.json",
+    "build": "rm -r -f lib && yarn run build:types && yarn run build:js && yarn copy-resources",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "build:types": "tsc --emitDeclarationOnly",
-    "lint": "prettier --check . && eslint . --ext .js,.jsx,.ts,.tsx && tsc",
-    "lint_fix": "prettier --write . --ext .js,.jsx,.ts,.tsx && eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "test": "jest"
+    "lint": "prettier --check . && eslint . --ext .js,.jsx,.ts,.tsx && tsc --noEmit",
+    "lint-fix": "prettier --write . && eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "jest",
+    "validate": "yarn lint && yarn test"
   },
   "types": "lib/index.d.ts",
   "version": "0.2.0"
