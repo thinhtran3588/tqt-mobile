@@ -5,3 +5,4 @@ tsconfig.json
 .vscode
 lib
 loading.json
+coverage

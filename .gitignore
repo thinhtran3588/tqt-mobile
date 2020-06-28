@@ -63,3 +63,5 @@ buck-out/
 /ios/Pods/
 
 .scannerwork
+
+coverage

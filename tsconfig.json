@@ -12,7 +12,7 @@
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
     "outDir": "./lib",                       /* Redirect output structure to the directory. */
-    "rootDir": "./src",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    "rootDirs": ["./src", "./test"],                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "removeComments": true,                /* Do not emit comments to output. */
     // "noEmit": true,                        /* Do not emit outputs. */
     // "incremental": true,                   /* Enable incremental compilation */
@@ -39,9 +39,8 @@
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": "./",                          /* Base directory to resolve non-absolute module names. */
     "paths": {
-      "@lib/*": [
-        "src/*"
-      ],
+      "@test-utils": ["__tests__/utils"],
+      "@lib/*": ["src/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
@@ -63,6 +62,12 @@
     "skipLibCheck": true
   },
   "exclude": [
-    "node_modules", "babel.config.js", "metro.config.js", "jest.config.js", "lib", "__tests__"
+    "node_modules", 
+    "babel.config.js", 
+    "metro.config.js", 
+    "jest.config.js", 
+    "lib", 
+    "jest.setup-test.js", 
+    "coverage"
   ]
 }

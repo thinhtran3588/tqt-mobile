@@ -1,1 +1,3 @@
 lib
+jest.setup-test.js
+coverage

@@ -23,7 +23,7 @@ module.exports = {
       'error',
       { exceptMethods: ['componentDidCatch', 'componentDidAppear', 'componentDidDisappear'] },
     ],
-    'import/no-unresolved': ['error', { ignore: ['@lib'] }], // ignore module import
+    'import/no-unresolved': ['error', { ignore: ['@test-utils', '@lib'] }], // ignore module import
     'max-len': ['error', 120], // change max length for a line to 120
     'no-console': 'error', // don't allow console
     'no-param-reassign': [
