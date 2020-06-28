@@ -51,15 +51,16 @@
     "url": "git+https://github.com/thinhtran3588/tqt-mobile.git"
   },
   "scripts": {
-    "copy-resources": "cp src/components/loading/loading.json lib/components/loading/loading.json",
-    "build": "yarn validate && rm -r -f lib && yarn run build:types && yarn run build:js && yarn copy-resources",
+    "build": "rm -r -f lib && yarn run build:types && yarn run build:js && yarn copy-resources",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "build:types": "tsc --emitDeclarationOnly && cp -r ./lib/src/* ./lib && rm -r -f ./lib/__tests__ && rm -r -f ./lib/src",
+    "copy-resources": "cp src/components/loading/loading.json lib/components/loading/loading.json",
     "lint": "prettier --check . && eslint . --ext .js,.jsx,.ts,.tsx && tsc --noEmit",
     "lint-fix": "prettier --write . && eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "prepublish": "yarn validate",
     "test": "jest --coverage",
-    "validate": "yarn lint && yarn test"
+    "validate": "yarn lint && yarn test && yarn build"
   },
   "types": "lib/index.d.ts",
-  "version": "0.2.0"
+  "version": "0.3.0"
 }
