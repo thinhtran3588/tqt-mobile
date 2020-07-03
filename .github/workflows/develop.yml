@@ -25,8 +25,11 @@ jobs:
       - name: Restore packages
         run: yarn
 
-      - name: Validate sourcecode
+      - name: Validate source code
         run: yarn validate
+
+      - name: Upload test coverage
+        run: bash <(curl -s https://codecov.io/bash)
 
       - name: Build
         run: yarn build
