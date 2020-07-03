@@ -14,10 +14,13 @@ A component React Native library
 
 **Master:**
 ![CI](https://github.com/thinhtran3588/tqt-mobile/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/thinhtran3588/tqt-mobile/branch/master/graph/badge.svg)](https://codecov.io/gh/thinhtran3588/tqt-mobile)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_tqt-mobile&metric=alert_status)](https://sonarcloud.io/dashboard?id=thinhtran3588_tqt-mobile)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_tqt-mobile&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_tqt-mobile)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_tqt-mobile&metric=security_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_tqt-mobile)
 
-**Develop:** ![CI-Dev](https://github.com/thinhtran3588/tqt-mobile/workflows/CI-Dev/badge.svg?branch=develop)
+**Develop:**
+![CI-Dev](https://github.com/thinhtran3588/tqt-mobile/workflows/CI-Dev/badge.svg?branch=develop)
+[![codecov](https://codecov.io/gh/thinhtran3588/tqt-mobile/branch/develop/graph/badge.svg)](https://codecov.io/gh/thinhtran3588/tqt-mobile)
 
 [Docs](https://docs.thinhtran.pro/mobile/overview)
